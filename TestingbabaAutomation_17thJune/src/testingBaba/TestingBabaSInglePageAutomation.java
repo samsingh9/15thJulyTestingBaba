@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class TestingBabaSInglePageAutomation {
 
 	public static void main(String[] args) throws InterruptedException
@@ -31,7 +33,7 @@ driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[1]/div/div
 		String val = list.get(i).getText();
 		System.out.println(val);
 	}
-	
+	System.out.println("automation done");
 	
 	}
 }
